@@ -21,6 +21,9 @@ class User():
         
     def __str__(self):
         return json.dumps(self.__dict__, indent=4)
+    
+    def __eq__(self, __o: object):
+        return self.__dict__ == __o.__dict__
 
     @classmethod
     def get_by_attr(cls, **info):
