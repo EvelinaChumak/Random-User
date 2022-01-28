@@ -1,4 +1,4 @@
-from config.info_for_api import InfoForProject
+from config import InfoForProject
 import pytest
 import re
 import datetime

@@ -1,7 +1,7 @@
 import pytest
 import json
-from models.user import User
-from config.info_for_api import InfoForProject
+from models import User
+from config import InfoForProject
 
 
 @pytest.fixture(scope="session")

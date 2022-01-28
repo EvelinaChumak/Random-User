@@ -1,5 +1,5 @@
-from config.info_for_api import InfoForProject
-from config.url import Url
+from config import InfoForProject
+from config import Url
 
 
 class CreateUrl():
