@@ -18,10 +18,10 @@ class User():
         self.id = kwargs.get('id')
         self.picture = kwargs.get('id')
         self.nat = kwargs.get('nat')
-        
+
     def __str__(self):
         return json.dumps(self.__dict__, indent=4)
-    
+
     def __eq__(self, __o: object):
         return self.__dict__ == __o.__dict__
 

@@ -32,7 +32,7 @@ class TestRandomUser():
     def test_age_picture_email(self, get_users_create_json):
         users = get_users_create_json
         verification_errors = []
-        
+
         users_date = [datetime.date(
             *(int(_) for _ in user.dob['date'].split('T')[0].split('-'))) for user in users]
         users_age = [user.dob['age'] for user in users]
